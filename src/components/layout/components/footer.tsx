@@ -3,11 +3,12 @@ import FooterInformationSection from "./footer-information-section";
 import FooterMenuSection from "./footer-menu-section";
 import FooterSocialMediaSection from "./footer-social-media-section";
 import Text from "@/components/text";
+import sectionPadding from "@/constant/section-padding";
 
 export function Footer() {
   return (
     <div
-      className={`flex flex-col lg:flex-row bg-[#434343] text-white py-[16px] sm:px-[24px] sm:py-[24px] md:px-[32px] md:py-[32px] lg:px-[60px] lg:py-[64px] gap-[32px]`}
+      className={`flex flex-col lg:flex-row bg-[#434343] text-white ${sectionPadding.x} ${sectionPadding.y}`}
     >
       <div className="flex-2">
         <img

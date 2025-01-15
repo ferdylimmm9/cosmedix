@@ -13,7 +13,7 @@ export type TestimonialItemType = {
 export default function TestimonialItem(props: TestimonialItemProps) {
   const { data } = props;
   return (
-    <div className="flex-shrink-0 w-full max-w-[320px] md:max-w-[540px] overflow-visible">
+    <div className="flex-shrink-0 w-full max-w-[290px] sm:max-w-[320px] md:max-w-[540px] overflow-hidden">
       <Text variant="body" className="text-center">
         {data.description}
       </Text>

@@ -4,7 +4,7 @@ import BookButton from "./book-button";
 
 export default function JumbotronSection() {
   return (
-    <div className="relative flex flex-col justify-end overflow-hidden aspect-[8/5] px-[16px] py-[16px] sm:px-[24px] sm:py-[24px] md:px-[32px] md:py-[32px] lg:px-[57px] lg:py-[64px] bg-gradient-to-b from-transparent to-[#432D1C99] text-[#F4F4F4] gap-6">
+    <div className="relative flex flex-col justify-end overflow-hidden aspect-auto md:aspect-[8/5] px-[16px] py-[16px] sm:px-[24px] sm:py-[24px] md:px-[32px] md:py-[32px] lg:px-[57px] lg:py-[64px] bg-gradient-to-b from-transparent to-[#432D1C99] text-[#F4F4F4] gap-6">
       <img
         src={images.jumbotron}
         className="absolute inset-0 -z-10 w-full h-full object-top"

@@ -31,7 +31,7 @@ const informations: {
 
 export default function FooterInformationSection() {
   return (
-    <div className="grid w-full grid-cols-[auto_auto] gap-8">
+    <div className="grid w-full grid-cols-[auto] md:grid-cols-[auto_auto] gap-[16px] mt-[32px] md:mt-0">
       {informations.map((info) => (
         <div key={info.label}>
           <Text variant="tag">{info.label}</Text>

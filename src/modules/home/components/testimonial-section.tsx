@@ -32,14 +32,14 @@ const testimonialItems: TestimonialItemType[] = [
 export default function TestimonialSection() {
   return (
     <div
-      className={`aspect-[2.3/1] bg-[#7D614B] text-white ${sectionPadding.x} ${sectionPadding.y} flex flex-col gap-[60px] shrink-0`}
+      className={`aspect-auto lg:aspect-[2.3/1] bg-[#7D614B] text-white ${sectionPadding.x} ${sectionPadding.y} flex flex-col gap-[60px] shrink-0`}
     >
       <Text variant="pageHeading" className="text-center">
         Don’t just take our word for it
       </Text>
       <Swiper
         slidesPerView="auto"
-        spaceBetween={64}
+        spaceBetween={20}
         centeredSlides
         loop
         grabCursor
@@ -50,8 +50,17 @@ export default function TestimonialSection() {
             "--swiper-pagination-bullet-size": "8px",
             "--swiper-pagination-color": "#FFFFFF",
             "--swiper-pagination-bullet-inactive-color": "#CCCCCC",
+            maxWidth: "100dvw",
           } as React.CSSProperties
         }
+        breakpoints={{
+          320: {
+            spaceBetween: 20,
+          },
+          480: {
+            spaceBetween: 36,
+          },
+        }}
       >
         {testimonialItems.map((item, index) => {
           return (
